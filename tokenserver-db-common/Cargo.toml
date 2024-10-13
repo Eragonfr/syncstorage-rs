@@ -13,19 +13,18 @@ serde.workspace = true
 serde_derive.workspace = true
 serde_json.workspace = true
 slog-scope.workspace = true
+diesel.workspace = true
+diesel_logger.workspace = true
+diesel_migrations.workspace = true
+thiserror.workspace = true
+async-trait.workspace = true
 
-async-trait = "0.1.40"
-diesel = { version = "1.4", features = ["mysql", "r2d2"] }
-diesel_logger = "0.1.1"
-diesel_migrations = { version = "1.4.0", features = ["mysql"] }
 syncserver-common = { path = "../syncserver-common" }
 syncserver-db-common = { path = "../syncserver-db-common", features = ["sql"] }
-thiserror = "1.0.26"
 tokenserver-common = { path = "../tokenserver-common" }
 tokenserver-settings = { path = "../tokenserver-settings" }
 tokio = { workspace = true, features = ["macros", "sync"] }
 
 [dev-dependencies]
 env_logger.workspace = true
-
 syncserver-settings = { path = "../syncserver-settings" }

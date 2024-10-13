@@ -13,8 +13,8 @@ futures.workspace = true
 http.workspace = true
 slog-scope.workspace = true
 thiserror.workspace = true
+async-trait.workspace = true
 
-async-trait = "0.1.40"
 google-cloud-rust-raw = { version = "0.16.1", features = ["spanner"] }
 deadpool = { git = "https://github.com/mozilla-services/deadpool", tag = "deadpool-v0.7.0" }
 form_urlencoded = "1.2"
